@@ -1,0 +1,31 @@
+
+.profile_section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+.profile_image{
+    border-radius: 50%;
+}
+
+.profile_contact_link{
+    padding: 8px;
+    margin: 5px;
+    background-color: gold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.456);
+    border-radius: 20px;
+}
+
+.profile_contact_link:hover{
+    color:white; 
+    font-weight: 700;
+}
+
+
+.profile_title{
+    margin-top: 1rem;
+}
