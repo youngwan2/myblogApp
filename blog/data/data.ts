@@ -27,13 +27,15 @@ export default async function getFeaturedPost(): Promise<Props[]> {
   return filterData;
 }
 
-export async function getAllPost(){
+export async function getAllPost() {
   const response = await fs.promises.readFile(
-    './blog/data/posts.json', 'utf-8'
-  )
+    "./blog/data/posts.json",
+    "utf-8"
+  );
 
-  const data = JSON.parse(response)
-  return data
+  const data = JSON.parse(response);
+
+  return data;
 }
 
 export function getImageData() {

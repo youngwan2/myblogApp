@@ -1,11 +1,10 @@
 import CarouselCompo from "./UI/carousel";
 import { getAllPost } from "../../blog/data/data";
 import { Props } from "../../blog/data/data";
-import Image from "next/image";
 import styles from "./likePosts.module.css";
 
 const LikePosts = async () => {
-  const getPostData: Props[] = await getAllPost();
+  const getPostData: Props[] = await getAllPost('');
   return (
     <>
       <br />
@@ -19,6 +18,7 @@ const LikePosts = async () => {
         {getPostData.map((post) => {
           return (
             <ul key={post.path} className={styles.post_wrap}>
+              {/* 메모)이미지 최소 크기 조절 필요 */}
               <li className={styles.post_image}>이미지</li>
               <hr />
               <li className={styles.post_date}>{post.date}</li>
